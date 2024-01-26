@@ -15,6 +15,7 @@ export class AutocompleteComponent implements OnInit {
   countries: any[] | undefined;
 
   formGroup: FormGroup | undefined;
+  selectedCountry: any;
   filteredCountries: any[] | undefined;
 
   constructor(private _countryService: CountryService) {}
