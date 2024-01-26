@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { SharedPrimeNGModule } from './modules/primeng/primeng.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +16,9 @@ import { AutocompleteComponent } from './autocomplete/autocomplete.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     FormsModule,
     SharedPrimeNGModule,
     AppRoutingModule

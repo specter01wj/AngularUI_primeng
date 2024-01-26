@@ -1,12 +1,21 @@
 
 <!-- Basic -->
+<h4>Basic</h4>
 <div class="card flex justify-content-center">
   <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)"></p-autoComplete>
 </div>
 
 
-
-
+<!-- Reactive Forms -->
+<h4>Reactive Forms</h4>
+<div class="card flex justify-content-center">
+  <form [formGroup]="formGroup">
+      <p-autoComplete formControlName="selectedCountry"
+        [suggestions]="filteredCountries"
+        (completeMethod)="filterCountry($event)" field="name">
+      </p-autoComplete>
+  </form>
+</div>
 
 
 
