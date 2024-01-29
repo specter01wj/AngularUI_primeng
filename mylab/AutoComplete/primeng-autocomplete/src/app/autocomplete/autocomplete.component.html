@@ -83,8 +83,14 @@
 </div>
 
 
-
-
+<!-- Float Label -->
+<h4>Float Label</h4>
+<div class="card flex justify-content-center">
+  <span class="p-float-label">
+      <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)" inputId="float-label"></p-autoComplete>
+      <label for="float-label">Float Label</label>
+  </span>
+</div>
 
 
 
