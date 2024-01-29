@@ -13,6 +13,7 @@ export class AutocompleteComponent implements OnInit {
   selectedItem: any;
   suggestions: any[] | undefined;
   countries: any[] | undefined;
+  selectedCountryAdvanced: any[] | undefined;
 
   formGroup: FormGroup | undefined;
   selectedCountry: any;
