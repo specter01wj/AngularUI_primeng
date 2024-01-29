@@ -73,6 +73,20 @@
 </div>
 
 
+<!-- Multiple -->
+<h4>Multiple</h4>
+<div class="card">
+  <span class="p-fluid">
+    <p-autoComplete [(ngModel)]="selectedItems" [suggestions]="items_multiple" (completeMethod)="search($event)"
+      [multiple]="true"></p-autoComplete>
+  </span>
+</div>
+
+
+
+
+
+
 
 
 

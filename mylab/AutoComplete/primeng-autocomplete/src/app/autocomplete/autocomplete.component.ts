@@ -18,6 +18,9 @@ export class AutocompleteComponent implements OnInit {
   countries: any[] | undefined;
   selectedCountryAdvanced: any[] | undefined;
 
+  selectedItems: any[] | undefined;
+  items_multiple: any[] | undefined;
+
   formGroup: FormGroup | undefined;
   selectedCountry: any;
   filteredCountries: any[] | undefined;
@@ -43,6 +46,7 @@ export class AutocompleteComponent implements OnInit {
 
   search(event: AutoCompleteCompleteEvent) {
       this.suggestions = [...Array(10).keys()].map(item => event.query + '-' + item);
+      this.items_multiple = [...Array(10).keys()].map(item => event.query + '-' + item);
   }
 
   filterCountry(event: AutoCompleteCompleteEvent) {
