@@ -8,11 +8,13 @@ import { SharedPrimeNGModule } from './modules/primeng/primeng.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
+import { DynamicColumnsComponent } from './dynamic-columns/dynamic-columns.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    DynamicColumnsComponent
   ],
   imports: [
     BrowserModule,
