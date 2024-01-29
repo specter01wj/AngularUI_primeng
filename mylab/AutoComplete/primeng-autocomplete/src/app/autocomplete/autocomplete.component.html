@@ -2,7 +2,8 @@
 <!-- Basic -->
 <h4>Basic</h4>
 <div class="card flex justify-content-center">
-  <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)"></p-autoComplete>
+  <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions"
+    (completeMethod)="search($event)"></p-autoComplete>
 </div>
 
 
@@ -87,12 +88,25 @@
 <h4>Float Label</h4>
 <div class="card flex justify-content-center">
   <span class="p-float-label">
-      <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)" inputId="float-label"></p-autoComplete>
-      <label for="float-label">Float Label</label>
+    <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)"
+      inputId="float-label"></p-autoComplete>
+    <label for="float-label">Float Label</label>
   </span>
 </div>
 
 
+<!-- Disabled -->
+<h4>Disabled</h4>
+<div class="card flex justify-content-center">
+  <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)"
+    [disabled]="true"></p-autoComplete>
+</div>
 
 
+<!-- Invalid -->
+<h4>Invalid</h4>
+<div class="card flex justify-content-center">
+  <p-autoComplete [(ngModel)]="selectedItem" [suggestions]="suggestions" class="ng-invalid ng-dirty"
+    (completeMethod)="search($event)"></p-autoComplete>
+</div>
 
