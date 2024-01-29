@@ -9,12 +9,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import { DynamicColumnsComponent } from './dynamic-columns/dynamic-columns.component';
+import { TemplateComponent } from './components/template/template.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
-    DynamicColumnsComponent
+    DynamicColumnsComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
